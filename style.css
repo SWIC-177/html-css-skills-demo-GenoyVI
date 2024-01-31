@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("node_modules/modern-normalize/modern-normalize");
 
 body {
@@ -9,6 +10,18 @@ body {
   text-align: center;
   color: #221811;
   font-family: Tahoma, Arial, sans-serif;
+=======
+@import url("node_modules/modern-normalize.css");
+h1 {
+  color: #fff;
+  border: 2px solid black;
+}
+div {
+  font-size: 64px;
+  color: red;
+  background-color: black;
+  margin: 15px;
+>>>>>>> 7b2592ec4ddf5951cdf4a9d27e2ff74ddc52583b
 }
 
 #wrapper {
