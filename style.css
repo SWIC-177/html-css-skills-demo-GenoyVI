@@ -1,13 +1,13 @@
 @import url("node_modules/modern-normalize/modern-normalize");
 
 body {
-  background-color: #85d2a6a2;
+  background-color: #64fffca2;
   background-image: url("oliver.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  color: #221811;
+  color: #181411;
   font-family: Tahoma, Arial, sans-serif;
 }
 
