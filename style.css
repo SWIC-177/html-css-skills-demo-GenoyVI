@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .error {
+    @apply mt-2 font-semibold text-red-800;
+  }
+}
+
+@layer utilities {
+  .is-error {
+    @apply transition-transform delay-75;
+  }
+}

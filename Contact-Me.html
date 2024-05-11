@@ -1,45 +1,95 @@
 <!doctype html>
 <html lang="en">
-  <head class="bg-pink-800">
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./style.css" />
-    <title>HTML-CSS Template</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Bung Brown Contact Page</title>
+    <script src="main.js" type="module"></script>
   </head>
-  <body class="bg-pink-700 text-lime-300">
-    <nav class="bg-pink-700 text-lime-300">
-      <ul class="bg-pink-700 text-lime-300">
-        <li><a href="index.html">index</a></li>
-        <li><a href="Contact-Me.html">Contact-Me</a></li>
-      </ul>
-      If you need to contact me for any reason, you can reach me on @GenoyVI on
-      GitHub or e-mail:
+
+  <body>
+    <h1
+      class="justify-center rounded-md bg-slate-500 p-3 text-center text-5xl font-thin text-gray-700"
+    >
+      Bung Brown Contact
+    </h1>
+
+    <div
+      class="text-3x1 justify-center space-x-4 rounded-md bg-slate-600 p-3 text-center font-bold text-gray-700"
+    >
+      <a href="index.html" class="hover:text-gray-100">Home</a>
+      <a href="contact.html" class="hover:text-gray-100">Contact</a>
+    </div>
+
+    <div id="about-me" class="justify-center bg-slate-300 text-center">
+      <h2 class="p-5 font-bold text-gray-700">Contact me:</h2>
+
       <form
-        class="container mx-auto flex max-w-screen-md flex-col gap-4 bg-pink-700 px-8 py-4 text-lime-300 *:rounded md:grid md:grid-cols-2 [&>input]:min-h-12 [&>label]:sr-only"
+        class="flex flex-col items-center space-y-4 p-5 font-bold"
+        action="mailto:whysopersonal@gmail.com"
+        method="post"
+        enctype="text/plain"
       >
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your Name" />
+        <div class="rounded-lg bg-gray-500 p-10">
+          <label for="full-name" class="p-3">Full Name:</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full_name"
+            class="rounded-md transition-transform hover:scale-110"
+          />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="✉️" />
+          <label for="email" class="p-3">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="rounded-md transition-transform hover:scale-110"
+          />
 
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" placeholder="☎️" />
+          <label for="phone" class="p-3">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="rounded-md transition-transform hover:scale-110"
+          />
+        </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="What's up?"></textarea>
+        <div class="flex flex-col items-center rounded-lg bg-gray-500 p-10">
+          <label
+            for="message"
+            class="message-label mb-2 p-10 font-semibold text-gray-200"
+          >
+            Message:
+          </label>
+          <textarea
+            class="rounded-md px-10 transition-transform hover:scale-110"
+            id="message"
+            name="message"
+            cols="50"
+            rows="10"
+            placeholder="Enter your message here; you should have some manners!"
+          ></textarea>
+        </div>
 
-        <button
+        <input
           type="submit"
-          class="col-span-2 mt-4 h-12 max-w-min place-self-center bg-green-500 px-4 py-2 text-white"
-        >
-          Submit
-        </button>
+          id="submit-button"
+          value="Submit"
+          class="rounded-lg bg-gray-600 p-5 font-bold text-gray-300 transition-transform hover:scale-110 hover:bg-gray-800 disabled:bg-black"
+        />
       </form>
-    </nav>
+    </div>
   </body>
+
+  <footer
+    class="flex items-center justify-center bg-gray-500 p-5 font-bold text-gray-400"
+  >
+    &copy; Bung Brown 2024 |
+    <a href="mailto:whysopersonal@gmail.com">whysopersonal@gmail.com</a> |
+    (618)722-0224
+  </footer>
 </html>
-======= 7b2592ec4ddf5951cdf4a9d27e2ff74ddc52583b

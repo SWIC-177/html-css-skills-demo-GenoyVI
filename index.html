@@ -2,89 +2,239 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-    <meta name="description" content="a learning exercise in html" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="images/faviconindex.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>AH-HTML AND CSS</title>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="./style.css" />
+    <title>My Bug Bio Page</title>
   </head>
+  <img
+    src="images/bung.jpg"
+    alt="I realize that this can be off-putting and confusing to introduce myself like this but i have have no plans on leaving my nice comfy basement hideaway"
+    class="max-xl: max-w-xs transform rounded-sm p-1 transition-transform hover:scale-x-105 hover:bg-green-800"
+  />
+  <body>
+    <div>
+      <h1
+        class="text-7x1 rounded-xl bg-green-700 py-5 text-center font-thin text-pink-700 hover:italic"
+      >
+        Bung Brown Bio
+      </h1>
+    </div>
 
-  <body class="bg-lime-700 text-white">
-    <nav>
-      <ul>
-        <li><a href="index.html">index</a></li>
-        <li><a href="contact-me.html">Contact-Me</a></li>
-      </ul>
+    <div
+      class="flex items-center justify-center space-x-4 rounded-md bg-gray-500"
+    >
+      <a href="https://ocean.si.edu/ocean-life/">
+        <img
+          src="images/grade.jpeg"
+          alt="this is my mom in the ocean, where my mother and father met. and where i was born."
+          class="max-w-xxs rounded-md p-1 hover:bg-gray-600 sm:max-w-xs"
+        />
+      </a>
+      <a href="https://bugguide.net/node/view/15740/">
+        <img
+          src="images/pray.jpg"
+          alt="I take mostly after my father, Beng Brown you may know him as the mantis from kung fu panda but i know him for taking down a huge bird that was attacking our colony by himself,"
+          class="max-w-xxs rounded-md p-1 hover:bg-gray-600 sm:max-w-xs"
+        />
+        <img
+          src="images/rightbugway.webp"
+          alt="My favorite food is moss. and don't try to fight my dad or you will get the horns."
+          class="max-w-xxs rounded-md p-1 hover:bg-gray-600 sm:max-w-xs"
+        />
+      </a>
+      <a href="https://entsoc.org/">
+        <img
+          src="images/wrongbugway.jpg"
+          alt="Although I'm from the ocean, i now live in a nice Bugs are my life now, and I love them and i will protect them because they are my friends. Even if it means i have to fight my dad, i will risk what i have to in order to protect my friends."
+          class="max-w-xxs rounded-md p-1 hover:bg-gray-600 sm:max-w-xs md:max-w-sm"
+        />
+      </a>
+    </div>
+
+    <nav
+      class="flex items-center justify-center space-x-32 rounded-md bg-gray-400 font-bold"
+    >
+      <a
+        href="#about-me"
+        class="rounded-md p-1 text-lg hover:bg-gray-300 hover:italic"
+        >Bio</a
+      >
+      <a
+        href="./contact.html"
+        class="rounded-md p-1 text-lg hover:bg-gray-300 hover:italic"
+        >Contact</a
+      >
     </nav>
-    <header class="text-slate-1000 flex bg-orange-300 *:p-8">
+
+    <div class="flex items-center justify-center bg-gray-600">
       <img
-        src="./images/oliver.jpg"
-        alt=""
-        width="200"
-        height="200"
-        class="rounded-3xl"
+        src="images/mecoding.jpg"
+        alt="me coding a dense java program that requires a lot of time and effort."
+        class="max-w-xs transform rounded-sm p-3 transition-transform hover:scale-110"
       />
-      <div>
-        <h1 class="text-4xl font-semibold text-pink-700">Aaron Hart:</h1>
+    </div>
 
-        <h2 class="text-xl italic text-orange-700">Student At SWIC</h2>
-      </div>
-    </header>
-    <section>
-      <p>
-        Learning HTML and CSS concepts takes time, effort! Aaron Hart is a CIS
-        student at SWIC. He is learning to program in github and he is creating
-        websites with html; he watches john oliver. he is john oliver.
-      </p>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-bold underline underline-offset-2">
-        Experience!
+    <div id="about-me">
+      <h2
+        class="flex items-center justify-center rounded-sm bg-gray-600 font-bold text-gray-400"
+      >
+        About Me:
       </h2>
-      <p>
-        I have experience in using html from my pre-established CIS174 web
-        development class where i formatted website and hosted them online via
-        online hosting service seperate from github. discerning between
-        percentages and pixels the use of tables and floats, as well as
-        formatting the used colors and fonts are all git skills i'm glad to have
-        experience using for classes and on on this very page.
+
+      <p
+        class="flex transform items-center justify-center rounded-sm bg-gray-600 p-4 font-thin text-gray-400 transition-transform hover:scale-110 hover:bg-gray-800"
+      >
+        My name is Bung Brown and I am a part-time coder in a basement working
+        at becoming a super skilled software specialist and a part-time intern
+        with the Delta 1st Division Martial Arts Brigade of Justice where i am
+        training to become a teacher in karate.
+      </p>
+      <div
+        class="flex transform items-center justify-center rounded-sm bg-gray-600 p-3 font-thin text-gray-400 transition-transform hover:scale-110 hover:bg-gray-800"
+      >
+        <div class="p-4">
+          <div>Name:</div>
+          <div>Bung Brown</div>
+        </div>
+        <div class="p-4">
+          <div>Age:</div>
+          <div>26</div>
+        </div>
+        <div class="p-4">
+          <div>Location:</div>
+          <div>Hamilton, Bermuda</div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center bg-gray-600">
+        <a href="http://www.theprayingmantis.org/" class="inline-block">
+          <img
+            src="images/tis.jpg"
+            alt="I am an established member of the community they all come to the wednesday potluck; last week was our soup spectacular"
+            class="max-w-xs transform rounded-sm p-1 transition-transform hover:scale-x-105 hover:bg-gray-800"
+          />
+        </a>
+      </div>
+
+      <p
+        class="flex transform items-center justify-center rounded-sm bg-gray-600 p-3 font-thin text-gray-400 transition-transform hover:scale-110 hover:bg-gray-800"
+      >
+        I am a respected member of the IA (Invertebrates Anonymous) #staystrong
       </p>
 
-      <p>
-        I'm currently Formatting and maintaining an html file via referenced
-        external stylesheet or CSS file;
+      <div class="flex items-center justify-center bg-gray-600">
+        <a href="https://www.iamjohnoliver.com/" class="inline-block">
+          <img
+            src="images/bung.jpg"
+            alt="I realize that this can be off-putting and confusing to introduce myself like this but i have have no plans on leaving my nice comfy basement hideaway"
+            class="max-w-xs transform rounded-sm p-1 transition-transform hover:scale-x-105 hover:bg-gray-800"
+          />
+          <img
+            src="images/jon.jpg"
+            alt="I rhetorically don't know what television is or why humans watch it but i do have this strange urge within my mind to watch John Oliver explain it all to me. I think it is because i am a bug and i am drawn to the light."
+            class="max-w-xs transform rounded-sm p-1 transition-transform hover:scale-x-105 hover:bg-gray-800"
+          />
+        </a>
+      </div>
+
+      <p
+        class="transform rounded-sm bg-gray-600 p-3 text-center font-thin text-gray-400 transition-transform hover:scale-110 hover:bg-gray-800"
+      >
+        My dream is to become john oliver's right hand man and learn new things.
+        I am currently working on a big project that will help me achieve this
+        goal, and learn new things. learning new languages and improving my 'new
+        things' in Java, Python, and C++ are all helpful tools right? but they
+        won't help me if i ever need to protect john from those who wish to do
+        him harm.
       </p>
-      <h3 class="text-2xl font-bold underline underline-offset-2">
-        Css Knowledge
+
+      <div class="flex items-center justify-center bg-gray-600">
+        <a href="https://www.java.com/en/" class="inline-block">
+          <img
+            src="images/java.jpg"
+            alt="Java Logo"
+            class="max-w-xs transform rounded-sm p-1 transition-transform hover:scale-x-105 hover:bg-gray-800"
+          />
+        </a>
+      </div>
+
+      <p
+        class="transform rounded-sm bg-gray-600 p-3 text-center font-thin text-gray-400 transition-transform hover:scale-110 hover:bg-gray-800"
+      >
+        Please use the Java logo to learn more about Java because Java is the
+        language of the bugs and we must learn it to survive.
+      </p>
+
+      <div class="flex items-center justify-center bg-gray-600">
+        <a href="https://davidgoggins.com/" class="inline-block">
+          <img
+            src="images/meeng.jpg"
+            alt="java java"
+            class="max-w-xs transform rounded-sm p-1 transition-transform hover:scale-x-105 hover:bg-gray-800"
+          />
+        </a>
+      </div>
+
+      <p
+        class="transform rounded-sm bg-gray-600 p-3 text-center font-thin text-gray-400 transition-transform hover:scale-110 hover:bg-gray-800"
+      >
+        My job's covered, i mostly am up at night restlessly trying to learn new
+        ways to protect john oliver as well as my fellow bugs.
+      </p>
+
+      <h3 class="bg-gray-600 p-10 text-center font-extrabold text-gray-400">
+        my friends (these guys are cool, they don't hurt bugs):
       </h3>
-      <p>
-        CSS and coding without making serious mistakes requires a serious amount
-        of attention to detail and commitment so it's often i come across
-        something that changes what being serious can look like; like the
-        command git commit for instance; it's modifier makes a serious
-        difference. git push and git pull are very important to the cohesion of
-        your workflow while coding. I, from experience, know there are alot of
-        places where errors in your workflow can arise if you aren't careful and
-        pay attention, you will have to pay with time.
-      </p>
-      =======
+      <div>
+        <div class="flex items-center justify-center bg-gray-600">
+          <a href="https://froggerclassic.appspot.com/" class="inline-block">
+            <img
+              src="images/frog.jpg"
+              alt="frog Logo."
+              class="max-w-xs transform rounded-sm p-5 transition-transform hover:scale-x-105 hover:bg-gray-800"
+            />
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center justify-center bg-gray-600">
+          <a href="https://snake.io/" class="inline-block">
+            <img
+              src="images/snake.jpg"
+              alt="snake Logo."
+              class="max-w-xs transform rounded-sm p-5 transition-transform hover:scale-x-105 hover:bg-gray-800"
+            />
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center justify-center bg-gray-600">
+          <a href="https://flappybird.io/" class="inline-block">
+            <img
+              src="images/bird.jpg"
+              alt="bird Logo."
+              class="max-w-xs transform rounded-sm p-5 transition-transform hover:scale-x-105 hover:bg-gray-800"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
 
-      <section>
-        <h4 class="text-2xl font-bold underline underline-offset-2">
-          About Me
-        </h4>
-        <p>
-          I like DnB music, 3d art, and game design (supermonkeyball) i'm a big
-          marine-biology nerd and i'm a big talk your ear off vegan(don't come
-          near me, i'm warning you) i've always been a huge nerd for the systems
-          that run behind websites i use for entertainment (such as a.i) so the
-          i'm engaged in the application of these skills easily and find it
-          personally interesting.
-        </p>
-      </section>
-    </section>
+    <div
+      id="contactme"
+      class="text-3x1 justify-center space-x-4 rounded-md bg-slate-600 p-3 text-center font-bold text-gray-700"
+    >
+      <a href="index.html" class="hover:text-gray-100">Home</a>
+      <a href="#contactme" class="hover:text-gray-100">Contact</a>
+    </div>
   </body>
+
+  <footer
+    class="flex items-center justify-center bg-gray-500 p-5 font-bold text-gray-400"
+  >
+    &copy; Bung Brown 2024 |
+    <a href="mailto:whysopersonal@gmail.com">whysopersonal@gmail.com</a> |
+    (618)722-0224
+  </footer>
 </html>

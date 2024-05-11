@@ -41,3 +41,47 @@ const validateUsername = (username) => {
 
 const username = "john_doe-123";
 console.log(validateUsername(username)); // Output: true
+// Validation functions
+const validateName = (name) => {
+  // Name must contain only letters and spaces
+  const nameRegex = /^[a-zA-Z\s]+$/;
+  return nameRegex.test(name);
+};
+
+const validateAge = (age) => {
+  // Age must be a number between 18 and 99
+  return !isNaN(age) && age >= 18 && age <= 99;
+};
+
+const validateAddress = (address) => {
+  // Address must not be empty
+  return address.trim() !== "";
+};
+
+const validateCreditCard = (creditCard) => {
+  // Credit card number must be a 16-digit number
+  const creditCardRegex = /^\d{16}$/;
+  return creditCardRegex.test(creditCard);
+};
+
+const validateZipCode = (zipCode) => {
+  // Zip code must be a 5-digit number
+  const zipCodeRegex = /^\d{5}$/;
+  return zipCodeRegex.test(zipCode);
+};
+
+// Example usage
+const name = "John Doe";
+console.log(validateName(name)); // Output: true
+
+const age = 25;
+console.log(validateAge(age)); // Output: true
+
+const address = "123 Main St";
+console.log(validateAddress(address)); // Output: true
+
+const creditCard = "1234567890123456";
+console.log(validateCreditCard(creditCard)); // Output: true
+
+const zipCode = "12345";
+console.log(validateZipCode(zipCode)); // Output: true
