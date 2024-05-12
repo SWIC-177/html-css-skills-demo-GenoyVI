@@ -11,20 +11,20 @@
 
   <body>
     <h1
-      class="justify-center rounded-md bg-slate-500 p-3 text-center text-5xl font-thin text-gray-700"
+      class="justify-center rounded-md bg-green-500 p-3 text-center text-5xl font-thin text-gray-700"
     >
       Bung Brown Contact
     </h1>
 
     <div
-      class="text-3x1 justify-center space-x-4 rounded-md bg-slate-600 p-3 text-center font-bold text-gray-700"
+      class="text-3x1 justify-center space-x-4 rounded-md bg-green-600 p-3 text-center font-bold text-gray-700"
     >
       <a href="index.html" class="hover:text-gray-100">Home</a>
       <a href="contact.html" class="hover:text-gray-100">Contact</a>
     </div>
 
-    <div id="about-me" class="justify-center bg-slate-300 text-center">
-      <h2 class="p-5 font-bold text-gray-700">Contact me:</h2>
+    <div id="about-me" class="justify-center bg-green-300 text-center">
+      <h2 class="p-5 font-bold text-green-700">Contact me:</h2>
 
       <form
         class="flex flex-col items-center space-y-4 p-5 font-bold"
@@ -32,7 +32,7 @@
         method="post"
         enctype="text/plain"
       >
-        <div class="rounded-lg bg-gray-500 p-10">
+        <div class="rounded-lg bg-green-500 p-10">
           <label for="full-name" class="p-3">Full Name:</label>
           <input
             type="text"
@@ -93,3 +93,75 @@
     (618)722-0224
   </footer>
 </html>
+<script>
+  // empty name
+  function validateFullName() {
+    const fullName = document.getElementById("full-name").value;
+    if (fullName.trim() === "") {
+      alert("Please enter your full name");
+      return false;
+    }
+    return true;
+  }
+
+  // valid email
+  function validateEmail() {
+    const email = document.getElementById("email").value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address");
+      return false;
+    }
+    return true;
+  }
+
+  // valid phone #
+  function validatePhoneNumber() {
+    const phoneNumber = document.getElementById("phone").value;
+    const phoneRegex = /^\d{10}$/;
+    if (!phoneRegex.test(phoneNumber)) {
+      alert("Please enter a valid phone number");
+      return false;
+    }
+    return true;
+  }
+
+  // submission validation
+  function validateForm() {
+    if (!validateFullName() || !validateEmail() || !validatePhoneNumber()) {
+      return false;
+    }
+    return true;
+  }
+
+  //  submission validation to submit button
+  document
+    .getElementById("submit-button")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      if (validateForm()) {
+        document.getElementById("submit-button").disabled = true;
+        document.getElementById("submit-button").value = "Submitting...";
+        document.getElementById("submit-button").classList.add("disabled");
+        document
+          .getElementById("submit-button")
+          .classList.remove("hover:bg-gray-800");
+        document
+          .getElementById("submit-button")
+          .classList.remove("hover:scale-110");
+        document
+          .getElementById("submit-button")
+          .classList.remove("text-gray-300");
+        document.getElementById("submit-button").classList.add("bg-black");
+        document.getElementById("submit-button").classList.add("text-white");
+        document
+          .getElementById("submit-button")
+          .classList.add("cursor-not-allowed");
+        document.getElementById("submit-button").classList.add("opacity-50");
+        document
+          .getElementById("submit-button")
+          .classList.add("pointer-events-none");
+        document.getElementById("submit-button").form.submit();
+      }
+    });
+</script>
